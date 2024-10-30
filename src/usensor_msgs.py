@@ -1,4 +1,4 @@
-# usensor_msgs.py
+#usensor_msgs.py
 
 class JointState:
     """
@@ -24,8 +24,7 @@ class Imu:
         self.linear_acceleration = Vector3()    # Aceleración lineal (m/s^2)
 
     def __str__(self):
-        return (f"Imu(orientation={self.orientation}, angular_velocity={self.angular_velocity}, "
-                f"linear_acceleration={self.linear_acceleration})")
+        return (f"Imu(orientation={self.orientation}, angular_velocity={self.angular_velocity}, /n linear_acceleration={self.linear_acceleration})")
 
 
 class Quaternion:

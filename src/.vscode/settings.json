@@ -1,4 +1,10 @@
 {
+    "python.autoComplete.extraPaths": [
+        "/home/hackbrian/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.11/microExamples/code-completion"
+    ],
+    "files.associations": {
+        ".mpyproject.json": "jsonc"
+    },
     "MicroPython.executeButton": [
         {
             "text": "▶",
@@ -17,12 +23,6 @@
             "priority": 4
         }
     ],
-    "python.autoComplete.extraPaths": [
-        "/home/hackbrian/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.11/microExamples/code-completion"
-    ],
-    "files.associations": {
-        ".mpyproject.json": "jsonc"
-    },
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.diagnosticSeverityOverrides": {
