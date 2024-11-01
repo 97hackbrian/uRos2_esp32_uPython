@@ -1,5 +1,3 @@
-# Creating a markdown file with the project description and goals
-
 Welcome to an innovative ROS 2 project that bridges the gap between an ESP32 embedded device and a dynamic mobile robotic system! This powerful node is designed to **seamlessly receive data via UDP** from the ESP32 and publish it as **JointState messages** within the ROS 2 framework. By facilitating efficient communication, we enable the capture of crucial encoder states and other important system parameters, empowering your robotic applications with real-time data.
 
 But that's not all! Our node is also tuned to subscribe to the **cmd_vel topic**, allowing it to receive and interpret velocity commands for precise motor control. This means you can send commands to the ESP32 and achieve responsive, real-time control of your robot's movements—transforming your ideas into action!
