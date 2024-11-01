@@ -1,5 +1,4 @@
 # Creating a markdown file with the project description and goals
-markdown_content = """# 🚀 Project Overview
 
 Welcome to an innovative ROS 2 project that bridges the gap between an ESP32 embedded device and a dynamic mobile robotic system! This powerful node is designed to **seamlessly receive data via UDP** from the ESP32 and publish it as **JointState messages** within the ROS 2 framework. By facilitating efficient communication, we enable the capture of crucial encoder states and other important system parameters, empowering your robotic applications with real-time data.
 
@@ -13,9 +12,3 @@ But that's not all! Our node is also tuned to subscribe to the **cmd_vel topic**
 - **Leveraging UDP Protocol**: Harness the power of **UDP for data transmission**, providing low-latency communication that’s perfect for real-time applications—ensuring your robot reacts instantly to its environment.
 """
 
-# Save the markdown content to a .md file
-markdown_file_path = '/mnt/data/project_description.md'
-with open(markdown_file_path, 'w') as file:
-    file.write(markdown_content)
-
-markdown_file_path
