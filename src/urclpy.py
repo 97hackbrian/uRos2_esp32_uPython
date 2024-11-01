@@ -37,7 +37,7 @@ class Publisher:
             return
         try:
             self.sock.sendto(msg_str.encode(), (self.udp_ip, self.udp_port))
-            print(f"Mensaje enviado a {self.udp_ip}:{self.udp_port}")
+            print(f"Connect {self.udp_ip}:{self.udp_port}")
         except Exception as e:
             print(f"Error al enviar el mensaje: {e}")
 
@@ -96,9 +96,9 @@ class Subscriber:
     def listen(self):
         self.sock.settimeout(0.01)  # Aumenta el timeout
         try:
-            print("Esperando datos...")
+            #print("Esperando datos...")
             data, addr = self.sock.recvfrom(1024)
-            print("Datos recibidos:", data)
+            #print("Datos recibidos:", data)
             try:
                 msg = json.loads(data.decode())
                 if self.topic in msg:
@@ -107,7 +107,8 @@ class Subscriber:
             except json.JSONDecodeError:
                 print("Error al decodificar el mensaje")
         except OSError as e:
-            print("Timeout o error de red al recibir datos:", e)
+            pass
+            #print("Timeout o error de red al recibir datos:", e)
 
     
     def parse_msg(self, msg_dict):

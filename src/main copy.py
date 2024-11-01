@@ -96,10 +96,10 @@ def main():
             encoder.effort = [0, 0, 0]
 
             # Imprimir los datos antes de publicar
-            print("Datos del mensaje del encoder a enviar:")
-            print("Posiciones:", encoder.position)
-            print("Velocidades:", encoder.velocity)
-            print("Esfuerzos:", encoder.effort)
+            #print("Datos del mensaje del encoder a enviar:")
+            #print("Posiciones:", encoder.position)
+            #print("Velocidades:", encoder.velocity)
+            #print("Esfuerzos:", encoder.effort)
 
             # Publica el mensaje de encoder
             publisher.publish(encoder)
@@ -112,7 +112,7 @@ def main():
             subscriber.listen()
         except OSError as e:
             node.get_logger().info(f"Error al enviar: {e}")
-            time.sleep(0.5)
+            #time.sleep(0.01)
 
 
 if __name__ == '__main__':
